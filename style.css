@@ -96,33 +96,6 @@ button:focus-visible {
   }
 }*/
 
-:root {
-    --clr-accent-100: hsl(13, 100%, 96%); /*very pale red*/
-    --clr-accent-400: hsl(12, 88%, 59%); /*very bright red*/
-
-    --clr-neutral-100: hsl(233, 12%, 13%); /*very dark blue*/
-    --clr-neutral-900: hsl(0, 0%, 98%); /*very light gray*/
-
-    --clr-rimary-400: hsl(227, 12%, 61%); /*dark grayish blue*/
-
-    --ff-primary: "Be Vietnam Pro", sans-serif;
-    --ff-body: var(--ff-primary);
-    --ff: var(--ff-primary);
-
-    --fw-regular: 300;
-    --fw-semi-bold: 500;
-    --fw-bold: 700;
-
-    --fs-200: 0.875rem; /* main body txt mobile & main nav links desktop */
-    --fs-300: 0.9375rem; /* footer links all displays */
-    --fs-400: 1rem; /* main body txt desktop & numbered subheads mobile & nav links mobile */
-    --fs-500: 1.125rem; /* numbered subheads desktop */
-    --fs-600: 2rem; /* 2nd lgst title mobile */
-    --fs-700: 2.875rem; /* 2nd lrgst title desktop */
-    --fs-800: 3.125rem; /* main intro title mobile */
-    --fs-900: 4rem; /* main intro title desktop */
-}
-
 /* Box sizing rules */
 *,
 *::before,
@@ -188,7 +161,139 @@ svg {
     }
 }
 
+:root {
+    --clr-accent-100: hsl(13, 100%, 96%); /*very pale red*/
+    --clr-accent-400: hsl(12, 88%, 59%); /*very bright red*/
+
+    --clr-neutral-100: hsl(233, 12%, 13%); /*very dark blue*/
+    --clr-neutral-900: hsl(0, 0%, 98%); /*very light gray*/
+
+    --clr-rimary-400: hsl(227, 12%, 61%); /*dark grayish blue*/
+
+    --ff-primary: "Be Vietnam Pro", sans-serif;
+    --ff-body: var(--ff-primary);
+    --ff: var(--ff-primary);
+
+    --fw-regular: 300;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    --fs-200: 0.875rem; /* main body txt mobile & main nav links desktop */
+    --fs-300: 0.9375rem; /* footer links all displays */
+    --fs-400: 1rem; /* main body txt desktop & numbered subheads mobile & nav links mobile */
+    --fs-500: 1.125rem; /* numbered subheads desktop */
+    --fs-600: 2rem; /* 2nd lgst title mobile */
+    --fs-700: 2.875rem; /* 2nd lrgst title desktop */
+    --fs-800: 3.125rem; /* main intro title mobile */
+    --fs-900: 4rem; /* main intro title desktop */
+}
+
 #test {
     font-size: 46px;
     color: var(--clr-accent-100);
+}
+
+.page-wrapper,
+.footer-content-wrapper,
+.cta-content-wrapper {
+    width: 90%;
+    min-height: calc(100vh-540px);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-points-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials-wrapper {
+    background-color: bisque;
+}
+
+.cta-section {
+    background-color: var(--clr-accent-400);
+    color: var(--clr-neutral-900);
+    height: 270px;
+}
+
+.bottom-section-wrapper {
+    height: 540px;
+}
+
+.social-links-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    background-color: var(--clr-neutral-100);
+    height: 270px;
+}
+
+.footer__col {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    outline-style: solid;
+    outline-color: black;
+}
+@media screen and (min-width: 1440px) {
+    .page-wrapper,
+    .footer-content-wrapper,
+    .cta-content-wrapper {
+        width: 80%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .intro-wrapper {
+        flex-direction: row-reverse;
+    }
+
+    .info-visuals,
+    .info-points-wrapper {
+        width: 50%;
+    }
+
+    .main-info-text__copy,
+    .intro-info__copy {
+        width: 40%;
+    }
+
+    ul li {
+        display: inline-block;
+    }
+
+    .main-wrapper {
+        flex-direction: row;
+    }
+
+    .cta-content-wrapper {
+        display: flex;
+    }
+
+    .cta-section__col1 {
+        width: 90%;
+    }
+
+    .cta-section__col2 {
+        width: 10%;
+    }
+
+    .footer-content-wrapper {
+        display: flex;
+    }
+    .footer__col {
+        width: 25%;
+    }
 }
