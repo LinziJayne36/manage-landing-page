@@ -27,11 +27,21 @@
                     <img src="/images/logo.svg" />
                     <nav>
                         <ul>
-                            <li><a href="#">Pricing</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Community</a></li>
+                            <li class="nav-links nav-links-main">
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li class="nav-links nav-links-main">
+                                <a href="#">Product</a>
+                            </li>
+                            <li class="nav-links nav-links-main">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="nav-links nav-links-main">
+                                <a href="#">Careers</a>
+                            </li>
+                            <li class="nav-links nav-links-main">
+                                <a href="#">Community</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -129,8 +139,44 @@
 
             <footer>
                 <div class="footer-content-wrapper">
+                    <div class="footer__col footer__col--center-vert">
+                        <div class="footer-col1-wrapper">
+                            <input
+                                type="text"
+                                class="footer__email-input"
+                            /><button class="btn footer__email-button">
+                                GO
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer__col footer__col--multi">
+                        <div class="nav1-col">
+                            <nav class="nav footer__nav1">
+                                <ul>
+                                    <li class="nav-links">Home</li>
+                                    <li class="nav-links">Pricing</li>
+                                    <li class="nav-links">Products</li>
+                                    <li class="nav-links">About Us</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="nav2-col">
+                            <nav class="nav footer__nav2">
+                                <ul>
+                                    <li class="nav-links">Careers</li>
+                                    <li class="nav-links">Community</li>
+                                    <li class="nav-links">Privacy Policy</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
                     <div class="footer__col">
-                        <img src="/images/logo.svg" alt="" />
+                        <img
+                            class="site-logo"
+                            src="/images/logo-footer.svg"
+                            alt="site logo"
+                        />
                         <div class="social-links-wrapper">
                             <img src="/images/icon-facebook.svg" alt="" />
                             <img src="/images/icon-youtube.svg" alt="" />
@@ -139,9 +185,6 @@
                             <img src="images/icon-instagram.svg" alt="" />
                         </div>
                     </div>
-                    <div class="footer__col"></div>
-                    <div class="footer__col"></div>
-                    <div class="footer__col"></div>
                 </div>
             </footer>
         </div>
