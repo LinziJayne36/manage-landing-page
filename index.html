@@ -19,6 +19,10 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="//unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+        />
     </head>
     <body>
         <div class="full-container">
@@ -77,7 +81,7 @@
                                 plan day-to-day tasks while keeping the larger
                                 team goals in view.
                             </p>
-                            <button class="button intro-info__button">
+                            <button class="btn btn--shadow intro-info__button">
                                 Get Started
                             </button>
                         </div>
@@ -95,10 +99,12 @@
                         </div>
                         <div class="info-points-wrapper">
                             <div class="main-info-point">
-                                <span class="main-info-point__num">01</span>
-                                <h3 class="main-info-point__title">
-                                    Track company-wide progress
-                                </h3>
+                                <div class="info-point-title-wrapper">
+                                    <span class="main-info-point__num">01</span>
+                                    <h3 class="main-info-point__title">
+                                        Track company-wide progress
+                                    </h3>
+                                </div>
                                 <p class="main-info-point__copy">
                                     See how your day-to-day tasks fit into the
                                     wider vision. Go from tracking progress at
@@ -108,10 +114,12 @@
                                 </p>
                             </div>
                             <div class="main-info-point">
-                                <span class="main-info-point__num">02</span>
-                                <h3 class="main-info-pont__title">
-                                    Advanced built-in reports
-                                </h3>
+                                <div class="info-point-title-wrapper">
+                                    <span class="main-info-point__num">02</span>
+                                    <h3 class="main-info-point__title">
+                                        Advanced built-in reports
+                                    </h3>
+                                </div>
                                 <p class="main-info-point__copy">
                                     Set internal delivery estimates and track
                                     progress toward company goals. Our
@@ -121,10 +129,12 @@
                                 </p>
                             </div>
                             <div class="main-info-point">
-                                <span class="main-info-point__num">03</span>
-                                <h3 class="main-info-point__title">
-                                    Everything you need in one place
-                                </h3>
+                                <div class="info-point-title-wrapper">
+                                    <span class="main-info-point__num">03</span>
+                                    <h3 class="main-info-point__title">
+                                        Everything you need in one place
+                                    </h3>
+                                </div>
                                 <p class="main-info-point__copy">
                                     Stop jumping from one service to another to
                                     communicate, store files, track tasks and
@@ -135,7 +145,64 @@
                         </div>
                     </div>
                     <div class="testimonials-wrapper">
-                        <img src="/design/testimonials-slider.jpg" />
+                        <ul class="slider">
+                            <li>
+                                <div class="slider__card">
+                                    <h3 class="slider__card__title">
+                                        Anisha Li
+                                    </h3>
+                                    <p class="slider__card__copy">
+                                        “Manage has supercharged our team’s
+                                        workflow. The ability to maintain
+                                        visibility on larger milestones at all
+                                        times keeps everyone motivated.”
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slider__card">
+                                    <h3 class="slider__card__title">
+                                        Ali Bravo
+                                    </h3>
+                                    <p class="slider__card__copy">
+                                        “We have been able to cancel so many
+                                        other subscriptions since using Manage.
+                                        There is no more cross-channel confusion
+                                        and everyone is much more focused.”
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slider__card">
+                                    <h3 class="slider__card__title">
+                                        Richard Watts
+                                    </h3>
+                                    <p class="slider__card__copy">
+                                        “Manage allows us to provide structure
+                                        and process. It keeps us organized and
+                                        focused. I can’t stop recommending them
+                                        to everyone I talk to!”
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slider__card">
+                                    <h3 class="slider__card__title">
+                                        Shanai Gough
+                                    </h3>
+                                    <p class="slider__card__copy">
+                                        “Their software allows us to track,
+                                        manage and collaborate on our projects
+                                        from anywhere. It keeps the whole team
+                                        in-sync without being intrusive.”
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <button class="btn btn--shadow intro-info__button">
+                            Get Started
+                        </button>
                     </div>
                 </div>
                 <div class="bottom-section-wrapper">
@@ -223,7 +290,7 @@
                     </footer>
                 </div>
             </div>
-            <div id="overlay">
+            <div class="hide" id="overlay">
                 <div class="mobi-nav-wrapper">
                     <nav class="mobi-menu-nav">
                         <ul class="mobi-ul">
@@ -247,22 +314,15 @@
                 </div>
             </div>
         </div>
+        <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
         <script src="/main.js"></script>
     </body>
 </html>
 <!--
         <p id="test">testing font size</p>
          What they’ve
-        said Anisha Li “Manage has supercharged our team’s workflow. The ability
-        to maintain visibility on larger milestones at all times keeps everyone
-        motivated.” Ali Bravo “We have been able to cancel so many other
-        subscriptions since using Manage. There is no more cross-channel
-        confusion and everyone is much more focused.” Richard Watts “Manage
-        allows us to provide structure and process. It keeps us organized and
-        focused. I can’t stop recommending them to everyone I talk to!” Shanai
-        Gough “Their software allows us to track, manage and collaborate on our
-        projects from anywhere. It keeps the whole team in-sync without being
-        intrusive.” Get Started Simplify how your team works today. Get Started
+        said Anisha Li  Ali Bravo  Richard Watts  Shanai
+        Gough  Get Started Simplify how your team works today. Get Started
         Home Pricing Products About Us Careers Community Privacy Policy Updates
         in your inbox… Go Copyright 2020. All Rights Reserved
 

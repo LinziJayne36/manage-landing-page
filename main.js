@@ -6,6 +6,7 @@ hbIcon.addEventListener("click", (e) => {
     console.log("menu btn pressed");
     hbIcon.classList.replace("show", "hide");
     hbIconClose.classList.replace("hide", "show");
+    overlayElem.classList.replace("hide", "show");
     overlayElem.classList.add("overlay");
 });
 
@@ -14,5 +15,11 @@ hbIconClose.addEventListener("click", (e) => {
     console.log("close menu btn pressed");
     hbIconClose.classList.replace("show", "hide");
     hbIcon.classList.replace("hide", "show");
+    overlayElem.classList.replace("show", "hide");
     overlayElem.classList.remove("overlay");
+});
+
+const slider = new A11YSlider(document.querySelector(".slider"), {
+    adaptiveHeight: true,
+    dots: true,
 });
