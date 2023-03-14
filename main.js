@@ -20,6 +20,26 @@ hbIconClose.addEventListener("click", (e) => {
 });
 
 const slider = new A11YSlider(document.querySelector(".slider"), {
-    adaptiveHeight: true,
+    slidesToShow: 1,
+    arrows: false, // arrows enabled 767px and down
     dots: true,
+    responsive: {
+        768: {
+            slidesToShow: 1,
+            arrows: false,
+            dots: true,
+        },
+        960: {
+            disable: false, // slider disabled 960px to 1279px
+        },
+        1280: {
+            disable: false,
+            slidesToShow: 1,
+            dots: true, // dots enabled 1280px and up
+        },
+        1440: {
+            slidesToShow: 3,
+            dots: false,
+        },
+    },
 });
