@@ -23,6 +23,7 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
     slidesToShow: 1,
     arrows: false, // arrows enabled 767px and down
     dots: true,
+
     responsive: {
         768: {
             slidesToShow: 1,
@@ -34,7 +35,7 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
         },
         1280: {
             disable: false,
-            slidesToShow: 1,
+            slidesToShow: 2,
             dots: true, // dots enabled 1280px and up
         },
         1440: {
