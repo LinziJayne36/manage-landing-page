@@ -240,6 +240,10 @@ h3 {
     display: none;
 }
 
+.header-button {
+    display: none;
+}
+
 .nav-links-mob,
 .nav-links-mob a {
     text-decoration: none;
@@ -257,9 +261,57 @@ h3 {
     margin: 0 auto;
 }
 
+.full-container {
+    background-image: url("images/bg-tablet-pattern.svg"),
+        url("images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: top -54px right -60px, top 550px right -160px;
+    background-size: 100% auto, 80% auto;
+}
+@media screen and (min-width: 645px) {
+    .full-container {
+        background-size: 86vmin;
+    }
+}
+
+@media screen and (min-width: 415px) {
+    .full-container {
+        background-size: 86vmin, 65vmin;
+        background-position: top -54px right -60px, top 450px right -210px;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .full-container {
+        background-size: 86vmin, 55vmin;
+        background-position: top -54px right -60px, top 450px right -290px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .full-container {
+        background-size: 76vmin, 45vmin;
+        background-position: top -94px right -90px, top 630px right -320px;
+    }
+}
+
+@media screen and (min-width: 970px) {
+    .full-container {
+        background-size: 64vmin, 64vmin;
+        background-position: top -244px right -150px, top 790px left -400px;
+    }
+}
+
+.cta-section {
+    background-image: url(/images/bg-simplify-section-mobile.svg);
+    background-size: 30vmin;
+    background-repeat: no-repeat;
+    background-position: left top 20px;
+}
+
 .page-wrapper {
     width: 90%;
-    max-width: 600px;
+    max-width: 980px;
     margin: 0 auto;
 }
 
@@ -275,8 +327,8 @@ h3 {
 
 .hb-menu-icon {
     margin-top: -0.4rem;
-    height: 24px;
-    width: 32px;
+    height: 20px;
+    width: 28px;
 }
 
 .hb-menu-close {
@@ -392,10 +444,11 @@ h3 {
 
 .nav-links-main a {
     color: var(--clr-neutral-100);
+    padding: 0 1rem;
 }
 
 img.intro-visuals__img {
-    margin-top: 2.5rem;
+    margin: 2.5rem auto;
 }
 
 .btn {
@@ -620,8 +673,33 @@ footer {
         margin: 0 auto;
     }
 
+    .hb-menu-icon {
+        display: none;
+    }
+
+    .desktop-menu-nav > ul > li > a {
+        display: flex;
+    }
+
+    .nav-links-main {
+        justify-content: space-between;
+    }
+
+    .header-button {
+        display: block;
+    }
+
     .intro-wrapper {
         flex-direction: row-reverse;
+        margin-top: 5rem;
+    }
+
+    img.intro-visuals__img {
+        margin: 0.5rem auto;
+    }
+
+    .intro-info {
+        text-align: left;
     }
 
     .info-visuals,
@@ -643,6 +721,11 @@ footer {
     .main-info-text__copy,
     .intro-info__copy {
         width: 40%;
+        margin-left: 0;
+    }
+
+    .intro-info__title {
+        max-width: 60%;
     }
 
     .info-point-title-wrapper {
