@@ -297,7 +297,7 @@ h3 {
 
 @media screen and (min-width: 970px) {
     .full-container {
-        background-size: 64vmin, 64vmin;
+        background-size: 100vmin, 64vmin;
         background-position: top -244px right -150px, top 790px left -400px;
     }
 }
@@ -669,8 +669,18 @@ footer {
     .footer-content-wrapper,
     .cta-content-wrapper {
         width: 80%;
-        max-width: 1280px;
+        max-width: 1080px;
         margin: 0 auto;
+    }
+
+    .full-container {
+        background-position: top -244px right -150px, top 1080px left -520px;
+        background-size: 56% auto, 56% auto;
+    }
+
+    .main-logo {
+        height: 32px;
+        width: auto;
     }
 
     .hb-menu-icon {
@@ -698,8 +708,13 @@ footer {
         margin: 0.5rem auto;
     }
 
+    .intro-visuals {
+        width: 100%;
+    }
+
     .intro-info {
         text-align: left;
+        padding-top: 4.25em;
     }
 
     .info-visuals,
@@ -708,24 +723,43 @@ footer {
     }
 
     .info-points-wrapper {
-        margin-top: 3rem;
-        margin-right: -9em;
+        margin-top: 2rem;
+        margin-right: -3em;
     }
 
     .main-info-point__copy {
-        width: 79%;
+        width: 85%;
         padding-left: 13%;
-        margin: 0.7em 0 2.6em 0;
+        margin-bottom: -1.5em;
     }
 
-    .main-info-text__copy,
+    .main-info-text {
+        margin-top: 2.75em;
+    }
+
+    h2.main-info-text__title {
+        font-size: var(--fs-600);
+        width: 80%;
+        text-align: left;
+        line-height: 1em;
+    }
+
     .intro-info__copy {
-        width: 40%;
+        width: 60%;
         margin-left: 0;
+        text-align: left;
+    }
+
+    .main-info-text__copy {
+        width: 60%;
+        margin-left: 0;
+        text-align: left;
+        padding: 2em 4em 0 0;
     }
 
     .intro-info__title {
-        max-width: 60%;
+        max-width: 90%;
+        font-size: var(--fs-800);
     }
 
     .info-point-title-wrapper {
@@ -738,6 +772,7 @@ footer {
 
     .main-wrapper {
         flex-direction: row;
+        margin-top: 5em;
     }
 
     .cta-content-wrapper {
