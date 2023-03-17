@@ -297,7 +297,7 @@ h3 {
 
 @media screen and (min-width: 970px) {
     .full-container {
-        background-size: 100vmin, 64vmin;
+        background-size: 70vmax, 64vmin;
         background-position: top -244px right -150px, top 790px left -400px;
     }
 }
@@ -742,6 +742,7 @@ footer {
         width: 80%;
         text-align: left;
         line-height: 1em;
+        margin: 0;
     }
 
     .intro-info__copy {
@@ -775,23 +776,102 @@ footer {
         margin-top: 5em;
     }
 
+    .testimonials-wrapper {
+        margin-top: 5em;
+    }
+
+    .test-sec-btn {
+        margin-top: 1.5em;
+    }
+
     .cta-content-wrapper {
         display: flex;
+        margin-top: -2em;
     }
 
     .cta-section__col1 {
-        width: 90%;
+        width: 69%;
     }
 
     .cta-section__col2 {
-        width: 10%;
+        width: 31%;
+    }
+
+    .cta-section__title {
+        width: 472px;
+        text-align: left;
+    }
+
+    .cta-section__btn {
+        display: flex;
+        margin: 4.5em 0.25em 3.75rem auto;
+        color: var(--clr-accent-400);
+        background-color: hsl(0, 0%, 100%);
+        cursor: pointer;
+        padding-left: 3.5em;
+        padding-right: 3.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .cta-section {
+        background-image: url(/images/bg-simplify-section-desktop.svg);
+        background-size: 117vmax;
+        background-repeat: no-repeat;
+        background-position: left top -150px;
+        min-height: 277px;
+    }
+
+    .slider__card {
+        background-color: var(--clr-neutral-900);
+        width: 350px;
+        position: relative;
+        margin: 0 auto;
     }
 
     .footer-content-wrapper {
         display: flex;
         flex-direction: row-reverse;
+        padding-top: 8em;
     }
     .footer__col {
+        display: flex;
+        flex-direction: column;
         width: 33.33%;
+    }
+
+    .footer__col--multi {
+        flex-direction: row;
+        margin-top: 3em;
+    }
+
+    .footer__nav1 ul,
+    .footer__nav2 ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: -7em;
+        margin-top: -1em;
+    }
+
+    .footer-site-logo {
+        order: 1;
+        margin-left: 0;
+        padding-top: 4em;
+    }
+
+    .social-links-wrapper img {
+        padding: 0 0.5em;
+        height: 22px;
+        width: auto;
+        margin-top: 1.5em;
+    }
+
+    .copyright-info {
+        margin-right: -1050px;
+    }
+
+    .social-links-wrapper {
+        order: 2;
+        margin-left: 0;
     }
 }
