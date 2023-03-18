@@ -685,7 +685,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1330px) {
     .page-wrapper,
     .footer-content-wrapper,
     .cta-content-wrapper {
