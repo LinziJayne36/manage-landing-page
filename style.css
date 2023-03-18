@@ -355,15 +355,24 @@ h3 {
 
 .slider__card {
     background-color: var(--clr-neutral-900);
-    width: 350px;
+    max-width: 94vw;
+    min-height: 260px;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
+}
+
+@media screen and (min-width: 596px) {
+    .slider__card {
+        max-width: 60vw;
+    }
 }
 
 .slider__card__img {
     position: absolute;
     top: -34px;
-    left: 140px;
+    left: 0px;
+    right: 0;
+    margin: auto;
 }
 .slider__card__title {
     font-weight: var(--fw-semi-bold);
@@ -664,6 +673,18 @@ footer {
     }
 }
 
+@media screen and (min-width: 940px) {
+    .slider__card {
+        max-width: 47vw;
+    }
+}
+
+@media screen and (min-width: 1330px) {
+    .slider__card {
+        max-width: 31vw;
+    }
+}
+
 @media screen and (min-width: 1440px) {
     .page-wrapper,
     .footer-content-wrapper,
@@ -824,9 +845,9 @@ footer {
 
     .slider__card {
         background-color: var(--clr-neutral-900);
-        width: 350px;
+        max-width: 532px;
         position: relative;
-        margin: 0 auto;
+        margin: 1em;
     }
 
     .footer-content-wrapper {
@@ -873,5 +894,12 @@ footer {
     .social-links-wrapper {
         order: 2;
         margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .testimonials-wrapper {
+        max-width: 1480px;
+        margin: 0 auto;
     }
 }

@@ -30,15 +30,16 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
             arrows: false,
             dots: true,
         },
-        960: {
+        940: {
+            slidesToShow: 2,
             disable: false, // slider disabled 960px to 1279px
         },
-        1280: {
+        1330: {
             disable: false,
-            slidesToShow: 2,
+            slidesToShow: 3,
             dots: true, // dots enabled 1280px and up
         },
-        1440: {
+        1340: {
             slidesToShow: 3,
             dots: false,
         },
