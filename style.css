@@ -526,8 +526,9 @@ h2.main-info-text__title {
     background-color: var(--clr-accent-400);
 }
 
-.main-info-point__title {
+h3.main-info-point__title {
     padding: 0.4rem 0 0.4rem 0.8rem;
+    font-size: 0.8rem;
 }
 
 .main-info-point__copy {
@@ -670,6 +671,11 @@ footer {
 @media screen and (min-width: 660px) {
     .info-point-title-wrapper {
         min-width: 600px;
+    }
+
+    h3.main-info-point__title {
+        padding: 0.4rem 0 0.4rem 0.8rem;
+        font-size: var(--fs-400);
     }
 }
 
